@@ -1,0 +1,121 @@
+/*****************
+ ALEX RODRIGUEZ VALDES - UO282936
+ Estilos de la Calculadora RPN
+*****************/
+
+/* Especificidad (0,0,1) */
+body {
+    display: flex;
+    flex-direction: column;
+
+	width: 25em;
+
+    color: black;
+    background-color: white;
+}
+
+/* Especificidad (0,0,1) */
+header {
+    margin-top: 1%;
+
+    border-top: 0.3em solid rgb(0, 0, 0);
+    border-left: 0.3em solid rgb(0, 0, 0);
+    border-right: 0.3em solid rgb(0, 0, 0);
+    
+    color: white;
+    background-color: #000000;
+}
+
+/* Especificidad (0,0,1) */
+h1 {
+    text-align: center;
+}
+
+/* Especificidad (0,0,1) */
+form {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+
+    border: 0.3em solid rgb(185, 191, 197);
+    /*hereda de body -> color: black; */
+    background-color: #c9cdcd
+}
+
+/* Especificidad (0,1,1) */
+form:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+
+    border-bottom: none;
+    padding-bottom: 0.25em;
+
+    gap: 0.5em;
+}
+
+/* Especificidad (0,1,1) */
+form:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+    border-top: none;
+    padding-top: 0.25em;
+
+    gap: 0.6em;
+}
+
+label:first-of-type {
+    grid-column: span 6;
+}
+
+label:last-of-type {
+    font-size: 0.9em;
+}
+
+input[type=text] {
+    grid-column: span 5;
+
+    text-align: right;
+}
+
+/* Especificidad (0,0,1) */
+textarea {
+    grid-column: span 6;
+
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+
+    width: 100%;
+
+    font-size: 1.2em;
+    text-align: right;
+
+    resize: none;
+}
+
+/* Especificidad (0,1,1) */
+input[type=button] {
+    grid-row: span 5;
+
+    width: 100%;
+
+    font-size: 1.2em;
+
+    border: 0.1em solid black;
+    /*hereda de body -> color: black; */
+    background-color: white;
+}
+
+/* Especificidad (0,2,1) */
+input[type=button][value="Enter"] {
+    grid-column: span 2;
+}
+
+p {
+    text-align: center;
+}
+
+p:last-of-type {
+    margin-top: 0em;
+}

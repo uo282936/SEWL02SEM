@@ -1,0 +1,22 @@
+/*****************
+ ALEX RODRIGUEZ VALDES - UO282936
+ Estilos de la Guia de la RPN
+*****************/
+
+/* Especificidad (0,0,1) */
+body {
+    color: black;
+    background-color: white;
+}
+
+/* Especificidad (0,0,1) */
+article {
+    margin-left: 2em;
+}
+
+aside {
+    padding-top: 1em;
+    margin-left: 1em;
+
+    font-size: 1.75em;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8"/>
+        <meta name = "author" content = "Alex Rodriguez Valdes"/>
+        <meta name = "description" content = "Calculadora RPN"/>
+        <meta name = "keywords" content = "Operacion, Matematicas, Calculadora"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+        <title> CALCULADORA RPN </title>
+
+        <link rel="stylesheet" type="text/css" href="GuiaBasica.css" />
+    </head>
+    <body>
+        <header>
+            <h1> Guía Básica Calculadora RPN </h1>
+        </header>
+
+        <section>
+            <h2> Paso básico: </h2>
+
+            <p> 
+                La calculadora presenta una pantalla principal, y un campo de entrada (INPUT). Cuando se pulsan las teclas de números,
+                estos se van escribiendo en el campo de entrada, pero aún no están registradas en la calculadora. Cuando se haya escrito
+                el operando completo, se debe pulsar la tecla ENTER para que el número pase a la pantalla principal, momento en que la
+                calculadora pasa a tener constancia de este.
+            </p>
+            <p>
+                Para hacer operaciones, ya sean unarias (raíz cuadrada, factorial, ...) o binarias (suma, resta, ...), los operandos sobre
+                los que se quieran hacer DEBEN ESTAR EN LA PANTALLA PRINCIPAL. Por ello, primero se deben escribir los operandos e introducirlos
+                con la tecla ENTER, y luego se elige la operación u operaciones deseadas, que se aplicarán sobre estos.
+            </p>
+
+            <article>
+                <h3> Operaciones unarias </h3>
+                <p> Las operaciones unarias son operaciones que se realizan sobre un único operando, por ejemplo, la raíz cuadrada de UN número. </p>
+
+                <p> 
+                    Para realizar estas operaciones, se debe escribir el número sobre el que queremos aplicar dicha operación, pulsar ENTER para
+                    introducirlo en la calculadora, y posteriormente pulsar la tecla correspondiente a la operación. De esta forma, se extrae el
+                    último número que se haya introducido (el que se escribió), se calcula la operación y se introduce automáticamente el resultado.
+                </p>
+
+                <p>
+                    EJEMPLO: Raíz cuadrada de 9: Tecla 9 -> ENTER -> Tecla √. Con la tecla √, se extrae el 9, se calcula su raíz cuadrada (3), y dicho
+                    resultado se re-introduce en la calculadora, apareciendo en pantalla el 3.
+                </p>
+                <p>
+                    EJEMPLO: Factorial de 4: Tecla 4 -> ENTER -> Tecla n!. Con la tecla n!, se extrae el 4, se calcula su factorial (24), y dicho
+                    resultado se re-introduce en la calculadora, apareciendo en pantalla el 24.
+                </p>
+                <p>
+                    EJEMPLO: Cuadrado de 5: Tecla 5 -> ENTER -> Tecla x^2. Con la tecla x^2, se extrae el 5, se calcula su cuadrado (25), y dicho
+                    resultado se re-introduce en la calculadora, apareciendo en pantalla el 25.
+                </p>
+
+                <h3> Operaciones binarias </h3>
+                <p> Las operaciones binarias son operaciones que se realizan sobre dos operandos, por ejemplo, la suma de DOS números. </p>
+
+                <p> 
+                    Para realizar estas operaciones, se deben escribir los números sobre los que queremos aplicar dicha operación uno a uno, y pulsar 
+                    la tecla ENTER por cada uno de ellos, para introducirlos en la calculadora. Posteriormente pulsar la tecla correspondiente a la 
+                    operación. De esta forma, se extraen los dos últimos números que se haya introducido (los que se escribieron), se calcula la operación 
+                    y se introduce automáticamente el resultado.
+                </p>
+
+                <p>
+                    EJEMPLO: Suma de 5+3: Tecla 5 -> ENTER -> Tecla 3 -> ENTER -> Tecla +. Con la tecla +, se extrae el 3 y el 5, se calcula su suma (8)
+                    y el resultado se re-introduce en la calculadora, apareciendo en pantalla el 8.
+                </p>
+                <p>
+                    EJEMPLO: Producto de 3*4: Tecla 3 -> ENTER -> Tecla 4 -> ENTER -> Tecla *. Con la tecla *, se extrae el 3 y el 4, se calcula su producto (12)
+                    y el resultado se re-introduce en la calculadora, apareciendo en pantalla el 12.
+                </p>
+
+                <h3> Paréntesis y prioridad de operaciones </h3>
+                <p> Los paréntesis indican prioridad a la hora de realizar operaciones, con mayor prioridad que la de operadores </p>
+
+                <p> 
+                    Para realizar estas operaciones, debemos calcular los resultados de las operaciones entre paréntesis directamente, entendiendo los
+                    paréntesis como bloques de operandos y operadores que funcionan como un único operando, pero que su valor viene determinado por una
+                    expresión que debe calcularse directamente.
+                </p>
+
+                <p>
+                    EJEMPLO: Operación (1+2)*(3-1) -> Tecla 1 -> ENTER -> Tecla 2 -> ENTER -> Tecla + -> Tecla 3 -> ENTER -> Tecla 1 -> ENTER -> Tecla - -> TECLA *. 
+                    Como observamos, según se termina de escribir el primer paréntesis, se resuelve su valor directamente, quedando este almacenado en la parte superior
+                    de la pantalla, y permitiéndonos introducir el siguiente paréntesis. Este último también la calculamos directamente, y entonces veremos en pantalla
+                    los resultados de ambos paréntesis, quedándonos solo la operación que hay entre ambos, la multiplicación.
+                </p>
+            </article>
+
+            <aside>
+                <p> PARA VOLVER A LA CALCULADORA, PULSE <a href="CalculadoraRPN.html"> AQUÍ </a> </p>
+            </aside>
+
+        </section>
+        
+    </body>
+</html>
