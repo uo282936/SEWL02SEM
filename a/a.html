@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Alex Rodriguez Valdes">
+        <meta name="description" content="Ejercicio 13 - Tarea 1 de la Práctica de Comp. en el cliente">
+        <meta name="keywords" content="JQuery, JavaScript, Ejercicio, Práctica">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Ejercicio 13 </title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="a.css">
+    </head>
+
+    <body>
+        <header>
+            <h1> Mapas - KML </h1>
+        </header><p> Este navegador soporta el API File </p>
+
+        <script src="a.js"></script>
+
+        <label for="archivo"> Archivo: </label>
+        <input id="archivo" type="file" onchange="mapeador.cargarKML(this.files)"><input type="button" value="Obtener mapa" onclick="mapeador.parsear()">
+        
+        <footer> Alex Rodriguez Valdes - Software y Estándares para la Web 2022/2023 </footer>
+    
+</body></html>
